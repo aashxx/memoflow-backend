@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = "mongodb+srv://tmohamedaashir:SyTGpclFCi3YREKH@memoflowdatabase.o8e32xe.mongodb.net/";
+const mongoURI = "mongodb+srv://tmohamedaashir:SyTGpclFCi3YREKH@memoflowdatabase.o8e32xe.mongodb.net/memoflowDB";
 
 // Connecting Mongo Atlas to the server
 const connectToMongo = () => {
