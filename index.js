@@ -8,11 +8,7 @@ const port = 5000;
 connectToMongo(); // Connecting MongoDB to the server
 
 app.use(express.json());
-app.use(cors({
-    origin: ["https://memoflow.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}));
+app.use(cors());
 
 app.use('/api/auth', require('./routes/auth')) // Endpoint for user signup and login
 app.use('/api/notes', require('./routes/note')) // Endpoint for CRUD in notes
